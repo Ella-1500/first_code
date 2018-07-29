@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+	function myFirstApp (name,age) {
+	alert ("Привет, меня зовут " + name + " и это моя первая программа");
+
+	function showSkills () {
+
+		let skills =["html","css","js"];
+		for (let i=0; i<skills.length;i++) {
+			document.write(skills[i] +"<br>");
+		}
+		
+	}
+	showSkills();
+
+	function checkAge() {
+		if (age >18) {
+			alert("Вы достигли 18")
+		} else {
+			alert("Вам рано")
+		}
+	}
+	checkAge(32);
+
+
+	function calcPow(num){
+		console.log (num*num)
+	}
+	calcPow(4)
+}
+
+myFirstApp("Maria",14)
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
